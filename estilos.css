@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: grid;
+    justify-content: center;
+}
+.home{
+    
+    width: 1820px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.items{
+    width: 33.3%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.items h6{
+    font-family: 'Work+Sans';
+}
+.logo{
+    width: 33.3%;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    
+
+}
+.compra{
+    width: 33.3%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.compra img{
+    width: 30px;
+    height: 30px;
+    margin: 50px;    
+}
