@@ -4,6 +4,7 @@
 
 *{
     margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -46,6 +47,15 @@ p{
     font-family: 'Lora', serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+label{
+    font-family: 'Work Sans', sans-serif;
+}
+
 /* ------------------------------------HEADER------------------------------- */
 
 .menu-principal{
@@ -71,7 +81,7 @@ p{
     font-weight: 400;
 }
 .compra h5{
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
 }
 
 .compra img{
@@ -192,3 +202,32 @@ p{
     margin: 0 0 10px 0;
 }
 
+
+.plan{
+    margin: 20px 0;
+}
+
+.plan-text{
+    margin-left: 20px;
+}
+
+.buy-and-contact{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.client-action{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 20px 0;
+}
+
+.client-action :not(:first-child){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f6;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    font-weight: 400;
+}
