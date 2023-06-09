@@ -56,6 +56,10 @@ label{
     font-family: 'Work Sans', sans-serif;
 }
 
+ul li{
+    font-family: 'Work Sans', sans-serif;
+}
+
 /* ------------------------------------HEADER------------------------------- */
 
 .menu-principal{
@@ -122,7 +126,7 @@ label{
 
 /* ------------------------------------SECOND ARTICLE------------------------------- */
 
-.row-article{
+.column-article{
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 50px 100px 20px 150px;
@@ -231,3 +235,63 @@ label{
     margin-left: 20px;
     font-weight: 400;
 }
+
+.icons{
+    padding: 40px 0 0 0;
+    display: flex;
+}
+
+.icons p{
+    margin-right: 30px;
+}
+
+/* ------------------------------------THIRD ARTICLE------------------------------- */
+
+.row-article{
+    display: grid;
+    
+}
+
+.categories{
+    padding: 50px 60px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories h4{
+    height: 60px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-left: 60px;
+}
+
+.categories h4:first-child{
+    color: #539e0f;
+    border-bottom: 5px solid;
+}
+
+.inferior-content{
+    padding: 0 200px 0 200px;
+}
+
+.row-content{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.inferior-content-text{
+   padding: 50px 0;
+}
+
+.inferior-content-text p{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.inferior-content-text ul li{
+     list-style-type: none;
+     margin-bottom: 10px;
+}
+
+/* ------------------------------------FOURTH ARTICLE------------------------------- */
+
