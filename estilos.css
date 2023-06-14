@@ -27,7 +27,11 @@ h4{
     line-height: 15px;
 }
 
-h5,
+h5{
+    font-size: 20px;
+    line-height: 15px;
+}
+
 h6 {
 	font-size: 13px;
 	line-height: 16px;
@@ -85,7 +89,7 @@ ul li{
     margin: 0 10px 5px 30px;
     font-weight: 400;
 }
-.compra h5{
+.compra h6{
     margin: 0 20px;
 }
 
@@ -351,3 +355,34 @@ ul li{
 }
 
 
+/* ------------------------------------FOOTER------------------------------- */
+
+footer{
+    background: #f9f9f8;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 200px 0 120px;
+}
+
+.footer-text h6, h5{
+    justify-content: flex-start;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-text h6{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footer-text .no-margin{
+    margin: 0;
+}
+
+.credits{
+    background: #eaeaeb;
+    padding: 20px 120px;
+}
