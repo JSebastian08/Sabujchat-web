@@ -161,28 +161,73 @@
                 </div>
                 <div class="related-products-images">
                     <div class="discount-product">
-                        <h6>-30%</h6>
-                        <img src="./Imagenes/product-1.jpg" alt="">
-                        <p>Le Bongai Tea</p>
-                        <p>$100.00 - <s>120.00</s></p>
+                        <button id="modal-btn">  
+                            <h6>-30%</h6>
+                            <img src="./Imagenes/product-1.jpg" alt="">
+                            <p>Le Bongai Tea</p>
+                            <p>$100.00 - <s>120.00</s></p>
+                        </button> 
                     </div>
                     <div class="product">
-                        <img src="./Imagenes/product-2.jpg" alt="">
-                        <p>Society Ice Tea</p>
-                        <p>$100.00 - <s>120.00</s></p>
+                        <button id="modal-btn-2">
+                            <img src="./Imagenes/product-2.jpg" alt="">
+                            <p>Society Ice Tea</p>
+                            <p>$100.00 - <s>120.00</s></p>
+                        </button>
                     </div>
                     <div class="discount-product">
-                        <h6>-30%</h6>
-                        <img src="./Imagenes/product-3.jpg" alt="">
-                        <p>Green Tea Tulsi</p>
-                        <p>$100.00 - <s>120.00</s></p>
+                        <button id="modal-btn-3">
+                            <h6>-30%</h6>
+                            <img src="./Imagenes/product-3.jpg" alt="">
+                            <p>Green Tea Tulsi</p>
+                            <p>$100.00 - <s>120.00</s></p>
+                        </button>
                     </div>
                     <div class="product">
-                        <img src="./Imagenes/product-4.jpg" alt="">
-                        <p>Best Friends Tea</p>
-                        <p>$100.00 - <s>120.00</s></p>
+                        <button id="modal-btn-4">
+                            <img src="./Imagenes/product-4.jpg" alt="">
+                            <p>Best Friends Tea</p>
+                            <p>$100.00 - <s>120.00</s></p>
+                        </button>
                     </div>
                 </div>
+                <dialog id="modal">
+                    <div class="modal-content"> 
+                        <div class="modal-left-content">
+                            <img src="./Imagenes/product-1.jpg" alt="">
+                            <div class="recomended-images">
+                                <img src="./Imagenes/product-detalis-s1.jpg" alt="">
+                                <img src="./Imagenes/product-detalis-s2.jpg" alt="">
+                                <img src="./Imagenes/product-detalis-s3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-right-content">
+                            <div>
+                                <h3>Dutchman's Breeches</h3>
+                                <button id="close-modal"><h4>X</h4></button>
+                                <p><strike>&euro;162.00</strike><strong>120.00</strong></p>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                    Vestibulum tortor quam, feuglat vitae, ultrices eget, tempor sit amet
+                                </p>
+                                <p>Size*</p>
+                                <p class="product-size">S <i class="fa-sharp fa-solid fa-caret-down" style="color: #000000;"></i></p>
+                                <p>Color*</p>
+                                <div class="squares">
+                                    <p class="blue"></p>
+                                    <p class="red"></p>
+                                    <p class="rose"></p>
+                                </div>
+                                <div class="quantity-products">
+                                    <p>-</p>
+                                    <p>02</p>
+                                    <p>+</p>
+                                    <h5>ADD TO CART</h5>
+                                </div>
+                                <p><i style="color: #7bc183;">✔</i> In stock</p>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </section>
     </nav>
@@ -229,5 +274,6 @@
             <img src="./Imagenes/payment.png" alt="">
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
