@@ -514,6 +514,19 @@ footer{
         border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
+    .discount-product{
+        position: relative;
+        bottom: 32px;
+    }
+
+    .discount-product h6{
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 40px;
+        
+    }
+
     .content, .credits{
         padding: 20px 60px 20px 60px;
         font-size: 12px;
@@ -610,3 +623,97 @@ footer{
 
 /* ------------------------------------MOBILE------------------------------- */
 
+@media (max-width: 415px){
+    .menu-principal{
+        padding: 30px 30px;
+    }
+    .items h6,h5, .compra h4, .compra h6, .compra img{
+        margin: 0 10px 0 0;
+        font-size: 5px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .column-article{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px 20px 20px;
+    }
+    .principal-product img{
+        width: 380px;
+    }
+    .left-content{
+        justify-content:center;
+        align-items: center;
+    }
+    .secundary-products p{
+        margin: 0 1px;
+    }
+    .secundary-products img{
+        margin: 20px 10px;
+        width: 70px;
+    }
+
+    .right-content{
+        padding: 10px 20px;
+    }
+
+    .title-product, .product-description, .buy-and-contact{
+        font-size: 10px;
+    }
+
+    .third-article{
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .categories h4{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .inferior-content{
+        padding: 0 20px;
+    }
+
+    .related-products{
+        padding: 10px 20px;
+    }
+
+    .related-products-images{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .product img, .discount-product img{
+        width: 300px;
+        margin: 0 10px 0 0;
+    }
+
+    .content, .credits{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 60px 20px 40px;
+        font-size: 10px;
+    }
+
+    .footer-text h5{
+        font-size: 20px;
+        margin: 0 0 10px 0;
+    }
+
+    .footer-text h6{
+        font-size: 12px;
+    }
+    
+    .credits img{
+        width: 120px;
+    }
+
+    .credits{
+        align-items: center;
+    }
+}
