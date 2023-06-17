@@ -102,21 +102,17 @@ ul li{
 /* ------------------------------------ENTRY CONTENT------------------------------- */
 
 .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
     background-image: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),
-    url(Imagenes/taza.jpg);
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url(Imagenes/taza.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%;
     height: 420px;
-}
-
-.content-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
 }
 
 .content-box-1 h1{
@@ -129,7 +125,7 @@ ul li{
     letter-spacing: 0;
 }
 
-/* ------------------------------------SECOND ARTICLE------------------------------- */
+/* ------------------------------------FIRTS ARTICLE------------------------------- */
 
 .column-article{
     display: grid;
@@ -278,7 +274,7 @@ ul li{
     background: #ce2120;
 }
 
-/* ------------------------------------THIRD ARTICLE------------------------------- */
+/* ------------------------------------SECOND ARTICLE------------------------------- */
 
 .row-article{
     display: grid;
@@ -326,7 +322,7 @@ ul li{
      margin-bottom: 10px;
 }
 
-/* ------------------------------------FOURTH ARTICLE------------------------------- */
+/* ------------------------------------THIRD ARTICLE------------------------------- */
 
 .related-products{
     padding: 30px 90px;
@@ -346,6 +342,43 @@ ul li{
     justify-content: flex-start;
     margin: 30px 0;
 }
+
+.product img, .discount-product img{
+    width: 250px;
+    margin: 0 20px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.discount-product{
+    position: relative;
+    bottom: 42px;
+}
+
+.discount-product h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    top: 50px;
+    background-color: #539e0f;
+    color: white;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.discount-product p, .product p{
+    font-family: 'Work Sans', sans-serif;
+    margin: 10px 0;
+}
+
+.discount-product p:first-of-type, .product p:first-of-type{
+    color: rgba(0, 0, 0, 0.65);
+}
+
+/* ------------------------------------POPUP------------------------------- */
 
 #modal{
     inset-block-start: 200px;
@@ -473,40 +506,6 @@ ul li{
     color: white;
     background: #323233;
 }
-.product img, .discount-product img{
-    width: 250px;
-    margin: 0 20px 0 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.discount-product{
-    position: relative;
-    bottom: 42px;
-}
-
-.discount-product h6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    left: 10px;
-    top: 50px;
-    background-color: #539e0f;
-    color: white;
-    border: 1px solid;
-    border-radius: 50%;
-}
-
-.discount-product p, .product p{
-    font-family: 'Work Sans', sans-serif;
-    margin: 10px 0;
-}
-
-.discount-product p:first-of-type, .product p:first-of-type{
-    color: rgba(0, 0, 0, 0.65);
-}
 
 
 /* ------------------------------------FOOTER------------------------------- */
@@ -539,6 +538,7 @@ footer{
 .credits{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #eaeaeb;
     padding: 20px 120px;
 }
@@ -589,31 +589,19 @@ footer{
 }
 
 @media (max-width: 768px){
-    .menu-principal{
-        padding: 30px 30px 30px 50px;
-    }
+    
     .items h6,h5, .compra h4, .compra h6, .compra img{
         margin: 0 10px 0 0;
         font-size: 12px;
     }
-
     .logo img{
         width: 100px;
     }
 
-    .column-article{
-        padding: 50px 10px 20px 20px;
-    }
     .principal-product img{
         width: 330px;
     }
-    .left-content{
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .secundary-products p{
-        margin: 0 1px;
-    }
+    
     .secundary-products img{
         margin: 20px 10px;
         width: 60px;
@@ -640,7 +628,6 @@ footer{
     .product img, .discount-product img{
         width: 132px;
         margin: 0 10px 0 0;
-        border: 1px solid rgba(0, 0, 0, 0.2);
     }
 
     .discount-product{
@@ -661,17 +648,16 @@ footer{
     }
 
     .content, .credits{
-        padding: 20px 60px 20px 60px;
+        padding: 20px 60px;
         font-size: 12px;
     }
 }
 
 @media (max-width: 640px){
     .menu-principal{
-        padding: 30px 30px;
+        padding: 30px;
     }
     .items h6,h5, .compra h4, .compra h6, .compra img{
-        margin: 0 10px 0 0;
         font-size: 10px;
     }
 
@@ -679,19 +665,10 @@ footer{
         width: 100px;
     }
 
-    .column-article{
-        padding: 50px 10px 20px 20px;
-    }
     .principal-product img{
         width: 280px;
     }
-    .left-content{
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .secundary-products p{
-        margin: 0 1px;
-    }
+    
     .secundary-products img{
         margin: 20px 10px;
         width: 45px;
@@ -706,23 +683,8 @@ footer{
         margin: 5px 0;
     }
 
-    .content-text, .title-product h3{
-        margin: 20px 0;
-    }
 
-    .plan{
-        margin: 5px;
-    }
-
-    .client-action{
-        padding: 10px 0;
-    }
-
-    .icons{
-        padding: 10px 0;
-    }
-
-    .third-article{
+    .second-article{
         font-size: 13px;
         line-height: 10px;
     }
@@ -774,7 +736,7 @@ footer{
     }
 
     .content, .credits{
-        padding: 20px 60px 20px 60px;
+        padding: 20px 60px;
         font-size: 8px;
     }
     
@@ -786,17 +748,11 @@ footer{
 /* ------------------------------------MOBILE------------------------------- */
 
 @media (max-width: 415px){
-    .menu-principal{
-        padding: 30px 30px;
-    }
     .items h6,h5, .compra h4, .compra h6, .compra img{
         margin: 0 10px 0 0;
         font-size: 5px;
     }
 
-    .logo img{
-        width: 100px;
-    }
 
     .column-article{
         display: flex;
@@ -806,13 +762,7 @@ footer{
     .principal-product img{
         width: 380px;
     }
-    .left-content{
-        justify-content:center;
-        align-items: center;
-    }
-    .secundary-products p{
-        margin: 0 1px;
-    }
+    
     .secundary-products img{
         margin: 20px 10px;
         width: 70px;
@@ -822,11 +772,7 @@ footer{
         padding: 10px 20px;
     }
 
-    .title-product, .product-description, .buy-and-contact{
-        font-size: 10px;
-    }
-
-    .third-article{
+    .second-article{
         font-size: 10px;
         line-height: 10px;
     }
@@ -861,10 +807,7 @@ footer{
     }
 
     .modal-content{
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        padding: 50px 0 0 0;
+        width: 400px;  
     }
 
     .modal-left-content{
@@ -894,9 +837,5 @@ footer{
     
     .credits img{
         width: 120px;
-    }
-
-    .credits{
-        align-items: center;
     }
 }
