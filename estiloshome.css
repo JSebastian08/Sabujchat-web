@@ -938,3 +938,11 @@ form{
     height: 20px;
     
 }
+
+/* ------------------------------------MEDIA-QUERYS------------------------------- */
+
+@media (max-width: 1280px){
+    .tarjetas, .tarjetas2,.tarjetas2-1{
+        margin-left: 2%;
+    }
+}
