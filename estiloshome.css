@@ -1,6 +1,9 @@
 body{
     margin: 0%;
+     
+    
 }
+
 /* ------------------------------------BARRA DE NAVEGACION------------------------------- */
 nav{
     display: flex;
@@ -41,6 +44,7 @@ nav .menu2 img{
     width: 5%;
     
 }
+
 /* ------------------------------------IMAGEN PRINCIPAL------------------------------- */
 .slider{
     margin-left: 2%;
@@ -72,6 +76,7 @@ nav .menu2 img{
 
    
 }
+
 /* ------------------------------------SECCIÓN DE LOS BANNER PROMOCIONALES------------------------------- */
 .banner{
     height: 400px;
@@ -79,6 +84,7 @@ nav .menu2 img{
     justify-content: center;
     gap: 30px;
     align-items: center;
+    
 }
 .imagen1{
     height: 270px;
@@ -334,6 +340,7 @@ nav .menu2 img{
 .tarjeta4 div{
     display: flex;
 }
+
 /* ------------------------------------SECCIÓN DE INFORMACIÓN------------------------------- */
 .informacion{
    margin: 100px;
@@ -373,7 +380,7 @@ nav .menu2 img{
     margin-right: 2%;
     padding-top: 100px;
     background: #F3F3F3;
-    height: 1050px;
+    height: 700px;
     text-align: center;
 }
 .productos2 h1{
@@ -828,6 +835,7 @@ form{
     display: flex;
     justify-content: center;
 }
+
 /* ------------------------------------SECCIÓN DE PRODUCTOS CON INFORMACIÓN----------------------------- */
 .productos3{
     background: url(Imagenes/bg-1.jpg);
@@ -885,6 +893,7 @@ form{
 
     
 }
+
 /* ------------------------------------SECCIÓN DE MARCAS----------------------------- */
 .marcas{
     display: flex;
@@ -898,6 +907,7 @@ form{
     margin: 35px;
     padding-top: 30px;
 }
+
 /* ------------------------------------SECCIÓN DE INFORMACIÓN 2----------------------------- */
 .footer{
     background: #F3F3F3;
@@ -920,6 +930,7 @@ form{
 .footer br{
     margin: 500px;
 }
+
 /* ------------------------------------SECCIÓN DE Copyrite----------------------------- */
 .footer5{
     height: 50px;
@@ -942,7 +953,322 @@ form{
 /* ------------------------------------MEDIA-QUERYS------------------------------- */
 
 @media (max-width: 1280px){
-    .tarjetas, .tarjetas2,.tarjetas2-1{
+    nav .menu1{
+        width: 40%;
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .imagen1{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-1.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+    .imagen2{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-2.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+
+    .tarjetas{
         margin-left: 2%;
     }
+
+    .productos2{
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 100px;
+        background: #F3F3F3;
+        height: 1100px;
+        text-align: center;
+    }
+
+    .tarjetas2{
+        margin-left: 2%;
+    }
+
+    .tarjetas2-1{
+        margin-left: 2%;
+    }
+
+    .footer{
+        background: #F3F3F3;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(4,200px);
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+@media (max-width: 1024px){
+    
+    
+    nav a{
+        margin: 12px;
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .imagen1{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-1.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+    .imagen2{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-2.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+
+
+    .productos{
+        height: 1200px;
+        
+    }
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 100px;
+        justify-content: center;
+        
+    
+    }
+
+    .tarjetas2{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 100px;
+        justify-content: center;
+        
+    }
+    .tarjetas2-1{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .tarjetas3{
+        display: grid;
+        grid-template-columns: repeat(1, 320px);
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .marcas img{
+        margin: 15px;
+        padding-top: 30px;
+    }
+
+    .footer{
+        background: #F3F3F3;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(4,150px);
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+/* ------------------------------------MEDIA-QUERYS MOVIL------------------------------- */
+@media (max-width: 768px) {
+    nav a{
+        margin: 12px;
+    }
+
+    .slider{
+        margin-left: 2%;
+        margin-right: 2%;
+        background-image: url(Imagenes/slider-2.jpg);
+        background-position: center;
+        height: 720px;
+       
+    
+    }
+    
+    .slider h1{
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 40px;
+        line-height: 60px;
+    }
+    
+    .slider h5{
+        font-weight: 500;
+        margin: 0;
+        font-size: 30px;
+        text-decoration-line: underline;
+    
+       
+    }
+
+    .banner{
+        height: 700px;
+        display: grid;
+        grid-template-columns: repeat(1, 450px);
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        
+    }
+
+    .imagen1{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-1.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+    .imagen2{
+        height: 270px;
+        width: 100%;
+        background-image: url(Imagenes/banner-2.png);
+        display: grid;
+        align-items: center;
+        
+        
+    }
+
+    .productos{
+        height: 1900px;
+        
+    }
+    
+    .productos h1{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+    
+        
+    }
+    
+    .productos p{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 10px;
+    }
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        gap: 10px;
+        justify-content: center;
+        
+    
+    }
+
+    .productos2{
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-top: 100px;
+        background: #F3F3F3;
+        height: 3600px;
+        text-align: center;
+    }
+
+    .tarjetas2{
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        gap: 10px;
+        justify-content: center;
+        
+    
+    }
+
+    .tarjetas2-1{
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        gap: 10px;
+        justify-content: center;
+        
+    
+    }
+    
+    .marcas img{
+        height: 50px;
+    }
+
+    .footer{
+        background: #F3F3F3;
+        height: 2000px;
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        justify-content: start;
+        align-items: center;
+        border: 0;
+        
+    }
+    
+    .footer h2{
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        margin-left: 25px;
+        
+    }
+    .footer h4{
+        font-family: 'Lora';
+        font-weight: 400;
+        margin-left: 25px;
+    }
+
+    .footer5{
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer5 h5{
+        font-family: 'Lora';
+        font-weight: 500;
+        margin: 0;
+    }
+    .footer5 img{
+        margin: 0;
+    }
+}
+
