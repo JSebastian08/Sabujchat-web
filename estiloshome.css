@@ -1088,6 +1088,11 @@ form{
         
         
     }
+
+    .productos2{
+        height: 2200px;
+        
+    }
     .marcas img{
         margin: 15px;
         padding-top: 30px;
@@ -1313,6 +1318,25 @@ form{
     }
     
     .productos p{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .productos2 h1{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 25px;
+        font-weight: 300;
+        text-align: center;
+    
+        
+    }
+    
+    .productos2 p{
         font-family: 'Playfair Display';
         font-style: normal;
         font-size: 18px;
