@@ -5,11 +5,11 @@ const abrirModal3 = document.querySelector("#modal-btn-3")
 const abrirModal4 = document.querySelector("#modal-btn-4")
 const cerrarModal = document.querySelector("#close-modal")
 
-abrirModal.addEventListener("click", ()=>{
+abrirModal2.addEventListener("click", ()=>{
     modal.showModal();
 })
 
-abrirModal2.addEventListener("click", ()=>{
+abrirModal.addEventListener("click", ()=>{
     modal.showModal();
 })
 

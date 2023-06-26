@@ -1350,7 +1350,6 @@ form{
     }
     
     .footer{
-        background: #F3F3F3;
         height: 1400px;
         display: grid;
         grid-template-columns: repeat(1, 200px);
